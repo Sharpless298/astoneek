@@ -22,7 +22,7 @@ html {
 /* link */
 
 a {
-    color: #333333;
+    color: #333333!important;
     text-decoration: underline;
     background-color: transparent;
 }
@@ -51,10 +51,12 @@ hr {
 /* Partial: Header */
 
 .header a {
+    color: #333333;
     text-decoration: none;
 }
 
 .header a:hover {
+    color: #333333;
     text-decoration: underline;
 }
 
