@@ -10,14 +10,12 @@
                     </div>
 
                     <div class="mx-0 mx-md-4 posts">
-                        <h1>Blog</h1>
-                        <hr>
-                        <ul class="list-unstyled">
-                            {{ range .Data.Pages.GroupByDate "2006" "desc"}}
-                                <li class="groupby">{{ .Key }}</li>
-                                {{ range sort .Pages "Date" "desc" }}
-                                    {{ partial "postlist" . }}
-                                {{ end }}
+                        <h1>Sections</h1>
+                        <ul>
+                            {{ range sort .Pages "Title" "asc" }}
+                                <li>
+                                    <a href="{{ .Permalink }}"><span>{{ .Title }}</span></a>
+                                </li>
                             {{ end }}
                         </ul>
                     </div>
