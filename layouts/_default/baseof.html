@@ -1,13 +1,19 @@
-<!DOCTYPE html>
-<html lang = "{{ .Site.LanguageCode }}">
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}">
 
-{{- partial "head.html" . -}}
+{{- partial "head" . -}}
+
 <body>
-  {{- partial "header.html" . -}}
-  <main>
-  {{- block "main" . }}{{- end }}
-  </main>
-  {{- partial "footer.html" . -}}
+    {{ block "main" . }}{{ end }}
+
+    {{ if .Site.Params.progressively }}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/progressively/1.2.5/progressively.min.css" integrity="sha512-TdJkMXwjtS9Gb8rN919K1JVdUv2+q5YHsKXPtJGDP79t1Nd5oCZy5mFA6Nr85Dsp6wJ1SUQgOyHPDulLzTjDcQ==" crossorigin="anonymous" />
+        <script>
+            window.addEventListener('load', function() {
+                progressively.init({delay: 30, throttle: 50});
+            }, true);
+        </script>
+    {{ end }}
 </body>
 
 </html>

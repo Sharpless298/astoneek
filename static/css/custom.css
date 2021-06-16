@@ -22,7 +22,7 @@ html {
 /* link */
 
 a {
-    color: #333333;
+    color: #333333 !important;
     text-decoration: underline;
     background-color: transparent;
 }
@@ -32,7 +32,16 @@ a:active, a:hover {
 }
 
 a:hover, a:focus {
-    color: #333333;
+    color: #333333 !important;
+    text-decoration: underline;
+}
+
+a.nav-link {
+  color: #77777E !important;
+}
+
+a.nav-link:hover, a.nav-link:focus {
+    color: #333333 !important;
     text-decoration: underline;
 }
 
@@ -145,13 +154,15 @@ hr {
     max-width: 100%;
 }
 
+/* CSS for code highlighting.  */
+/* Modified for using pygments/chroma instead of higlightjs */
 .content .markdown code, .content .markdown pre {
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    background-color: #fff;
 }
 
-.content .markdown code {
-    /* enclosed by single backtick (`) */
+
+/* enclosed by single backtick (`) */
+.content .markdown :not(pre) > code {
     color: #333;
     padding: .2em .4em;
     margin: 0;
@@ -160,8 +171,8 @@ hr {
     border-radius: 6px;
 }
 
-.content .markdown pre {
-    /* Hugo specific: consider using the 'highlight' shortcode */
+/* Hugo specific: consider using the 'highlight' shortcode */
+.content .markdown pre{
     display: block;
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -172,18 +183,24 @@ hr {
     word-wrap: break-word;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-    border: 1px solid #ddd;
     border-radius: 6px;
+    font-size: 0.75rem;
 }
 
-.content .markdown pre code, .content .markdown pre output {
-    /* enclosed by 4 backticks (````) */
+.content .markdown pre:not(.chroma){
+  border: 1px solid #ddd;
+}
+
+
+/* enclosed by 4 backticks (````) */
+/* .content .markdown pre code, .content .markdown pre output {
     padding: 0;
     font-size: 0.75rem;
     line-height: 20px;
-    background-color: #fff;
     border-radius: 0;
-}
+} */
+
+
 
 .content .markdown blockquote {
     padding: 0.5rem 0.5rem;
@@ -237,6 +254,10 @@ hr {
 .content .navigation .icon {
     width: 16px;
     height: 16px;
+}
+
+.content table{
+  margin-bottom: 1rem;
 }
 
 /* Partial: Utterances Comments */
