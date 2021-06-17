@@ -8,11 +8,7 @@
                 <div class="mx-0 mx-md-4">
                     <h2>Posts about {{ .Title }}</h2>
                     <hr>
-                    <ul>
-                        {{ range .Data.Pages.ByPublishDate }}
-                        {{ partial "postlist" . }}
-                        {{ end }}
-                    </ul>
+                    {{ partial "postlist" . }}
                 </div>
             </div>
         </div>
