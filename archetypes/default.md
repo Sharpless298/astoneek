@@ -2,9 +2,9 @@
 title: '{{ replace .TranslationBaseName "-" " " | title }}'
 date: {{ .Date }}
 draft: true
-meta_img: "images/image.png"
+img: "images/image.png"
+author: author
 tags:
-  - "one tag"
-  - "another tag"
+  - "tag"
 description: "Description for the page"
 ---
