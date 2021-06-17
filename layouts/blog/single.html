@@ -10,13 +10,13 @@
                 <div class="mb-md-4 meta">
                     {{ if not .Params.noauthor }}
                     {{ if .Params.author }}
-                    <span class="author middot" title="{{ .Params.Author }}">
+                    <span class="author" title="{{ .Params.Author }}">
                         {{ .Params.author }}
                     </span>
                     {{ end }}
                     {{ end }}
 
-                    <span class="date" title='{{ .Date.Format "Mon Jan 2 2006 15:04:05 MST" }}'>
+                    <span class="date middot" title='{{ .Date.Format "Mon Jan 2 2006 15:04:05 MST" }}'>
                         {{ .Date.Format  "2006-01-02" }}
                     </span>
 

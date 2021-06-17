@@ -100,7 +100,7 @@ hr {
     text-decoration: none;
 }
 
-.content .middot:after {
+.content .middot:before {
     margin: 0 3px;
     content: "·";
 }
