@@ -13,12 +13,6 @@ html {
 	margin-right: 0;
 }
 
-/* margin top */
-
-.mt-xl {
-	margin-top: 60px;
-}
-
 /* link */
 
 a {
@@ -37,6 +31,7 @@ a:hover, a:focus {
 }
 
 a.nav-link {
+	padding: .5rem 1rem;
 	color: #77777E !important;
 }
 
@@ -52,35 +47,47 @@ hr {
 }
 
 .content .markdown hr {
-	margin-left: 1.52rem;
-	margin-right: 1.52rem;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
 	height: 2px;
 	color: #777;
 }
 
 /* Partial: Header */
 
-.header a {
+header {
+	margin-top: 3rem;
+}
+
+header a {
 	text-decoration: none;
 }
 
-.header a:hover {
+header a:hover {
 	text-decoration: underline;
 }
 
-.header h1.site-name {
+header h1.site-name {
+	text-align: center;
 	font-weight: 600;
 	font-size: 2rem;
 	color: #333333;
 }
 
-.header ul.nav li {
+header ul.nav {
+	margin-bottom: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+	padding: 0;
+}
+
+header ul.nav li {
+	display: block;
 	font-size: 1rem;
 }
 
-.header ul.nav {
-	margin-bottom: 1rem;
-}
 
 /* Partial: Content */
 

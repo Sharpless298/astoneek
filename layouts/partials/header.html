@@ -1,24 +1,16 @@
-<div class="mt-xl header">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-auto">
-				<a href="{{ .Site.BaseURL }}">
-					<h1 class="site-name">{{ .Site.Title }}</h1>
-				</a>
-			</div>
-		</div>
+<header>
+	<a href="{{ .Site.BaseURL }}">
+		<h1 class="site-name">{{ .Site.Title }}</h1>
+	</a>
 
-		<div class="row">
-			<ul class="nav nav-primary justify-content-center">
-				{{ range .Site.Menus.primary.ByWeight }}
-				<li class="nav-item">
-					<a class="nav-link{{ if .Identifier }} text-{{ .Identifier }}{{ end }}" href="{{ .URL }}">
-						{{ .Pre }}
-						{{ .Name }}
-					</a>
-				</li>
-				{{ end }}
-			</ul>
-		</div>
-	</div>
-</div>
+	<ul class="nav">
+		{{ range .Site.Menus.primary.ByWeight }}
+		<li>
+			<a class="nav-link{{ if .Identifier }} text-{{ .Identifier }}{{ end }}" href="{{ .URL }}">
+				{{ .Pre }}
+				{{ .Name }}
+			</a>
+		</li>
+		{{ end }}
+	</ul>
+</header>
