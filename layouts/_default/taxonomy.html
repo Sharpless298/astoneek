@@ -2,17 +2,17 @@
 {{ partial "header" . }}
 
 <div class="content">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-11 col-lg-8">
-                <div class="mx-0 mx-md-4">
-                    <h2>Posts about {{ .Title }}</h2>
-                    <hr>
-                    {{ partial "postlist" . }}
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-11 col-lg-8">
+				<div class="mx-0 mx-md-4">
+					<h2>Posts about {{ .Title }}</h2>
+					<hr>
+					{{ partial "postlist" . }}
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 {{ partial "footer" . }}
