@@ -1,0 +1,18 @@
+<div class="navigation">
+	<div class="row">
+		<div class="col-10 col-lg-6">
+			{{ if .PrevInSection }}
+			<div class="mx-0 mx-md-4 mt-4 text-left">
+				<a href="{{ .PrevInSection.Permalink }}">« {{ .PrevInSection.Title }}</a>
+			</div>
+			{{ end }}
+		</div>
+		<div class="col-10 col-lg-6">
+			{{ if .NextInSection }}
+			<div class="mx-0 mx-md-4 mt-4 text-right">
+				<a href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }} »</a>
+			</div>
+			{{ end }}
+		</div>
+	</div>
+</div>
