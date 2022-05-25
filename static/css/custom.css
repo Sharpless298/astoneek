@@ -84,6 +84,12 @@ hr {
 
 /* Partial: Content */
 
+div.content {
+	align: center;
+	margin: 0 auto;
+	width: clamp(300px, 66%, 880px);
+}
+
 .content h1, h2, h3, h4, h5, h6 {
 	font-weight: 600;
 	color: #333333;
