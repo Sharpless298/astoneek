@@ -17,10 +17,10 @@
 			{{ .Date.Format  "2006-01-02" }}
 		</span>
 
-		<div class="d-none d-md-inline tags">
-			<ul class="list-unstyled d-inline">
+		<div class="tags">
+			<ul>
 				{{ range .Params.tags }}
-				<li class="d-inline middot">
+				<li class="middot">
 					<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
 				</li>
 				{{ end }}

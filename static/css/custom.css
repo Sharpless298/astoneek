@@ -31,7 +31,6 @@ a:hover, a:focus {
 }
 
 a.nav-link {
-	padding: .5rem 1rem;
 	color: #77777E !important;
 }
 
@@ -43,20 +42,48 @@ a.nav-link:hover, a.nav-link:focus {
 /* horizontal rule */
 
 hr {
-	border: 0;
+	height: 0;
+	border: 2px solid #e5e5e5;
+	border-radius: 2px;
 }
 
 .content .markdown hr {
 	margin-left: 1.5rem;
 	margin-right: 1.5rem;
-	height: 2px;
-	color: #777;
+}
+
+kbd {
+	font-family: "Ubuntu Mono", monospace;
+  padding: .2rem .4rem;
+  font-size: .875em;
+  color: #fff;
+  background-color: #212529;
+  border-radius: .2rem;
+}
+
+kbd kbd {
+  padding: 0;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.mark, mark {
+  padding: .2em;
+  background-color: #fcf8e3;
+}
+
+/* post list */
+
+ul.postlist {
+	list-style: none;
+	padding: 0;
 }
 
 /* Partial: Header */
 
 header {
 	margin-top: 3rem;
+	overflow: auto;
 }
 
 header a {
@@ -72,9 +99,12 @@ header h1.site-name {
 	font-weight: 600;
 	font-size: 2rem;
 	color: #333333;
+	margin: 0;
 }
 
 header ul.nav {
+	height: auto;
+	margin-top: 0;
 	margin-bottom: 1rem;
 	display: flex;
 	flex-wrap: wrap;
@@ -85,7 +115,22 @@ header ul.nav {
 
 header ul.nav li {
 	display: block;
+	margin: .5rem 1rem;
 	font-size: 1rem;
+}
+
+/* Partial: Blog single */
+
+div.tags {
+	display: inline;
+}
+div.tags ul {
+	list-style: none;
+	display: inline;
+	padding: 0;
+}
+div.tags ul li {
+	display: inline;
 }
 
 
@@ -136,19 +181,12 @@ div.content {
 
 .content .markdown li {
 	margin-top: 0rem;
-	margin-bottom: .8rem;
+	margin-bottom: .5rem;
 }
 
 .content twitterwidget {
 	margin: auto;
 }
-
-/*
-.content .meta, .content .markdown h1, .content .markdown h2, .content .markdown h3, .content .markdown h4, .content .markdown h5, .content .markdown h6, .content .markdown p, .content .markdown ul, .content .markdown ol, .content .markdown dl, .content .markdown blockquote, div.alert, form, table, .gist-file, .content details{
-	margin-left: 1.5rem;
-	margin-right: 1.5rem;
-}
-*/
 
 /* blog post typography */
 
@@ -205,10 +243,6 @@ div.content {
 	white-space: pre;
 	word-break: break-all;
 	word-wrap: break-word;
-	/*
-	margin-left: 1.5rem;
-	margin-right: 1.5rem;
-	*/
 	border: 0;
 	font-size: 1rem;
 }
@@ -347,7 +381,7 @@ div.content {
 	max-width: 100%;
 }
 
-/* < medium screens */
+/* medium screens */
 
 @media (max-width: 767.98px) {
 	html {
