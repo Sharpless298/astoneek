@@ -1,4 +1,4 @@
-# supermum
+# supremum
 
 A hugo theme.
 
