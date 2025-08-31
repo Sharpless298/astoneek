@@ -1,4 +1,4 @@
-# astoneek
+# supermum
 
 A hugo theme.
 
