@@ -1,9 +1,9 @@
 /* Global styles */
 
 body {
-	font-family: "Noto Sans",  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
 	font-feature-settings: "liga", "kern";
-	background-color: #fff;
+	background-color: #1d1e20;
 }
 
 /* Fix jumping scrollbar when switching to long pages */
@@ -16,7 +16,7 @@ html {
 /* link */
 
 a {
-	color: #333333 !important;
+	color: #d2d2d2;
 	text-decoration: underline;
 	background-color: transparent;
 }
@@ -26,16 +26,10 @@ a:active, a:hover {
 }
 
 a:hover, a:focus {
-	color: #333333 !important;
 	text-decoration: underline;
 }
 
-a.nav-link {
-	color: #77777E !important;
-}
-
 a.nav-link:hover, a.nav-link:focus {
-	color: #333333 !important;
 	text-decoration: underline;
 }
 
@@ -53,7 +47,7 @@ hr {
 }
 
 kbd {
-	font-family: "Ubuntu Mono", monospace;
+  font-family: "Ubuntu Mono", monospace;
   padding: .2rem .4rem;
   font-size: .875em;
   color: #fff;
@@ -76,13 +70,12 @@ kbd kbd {
 
 ul.postlist {
 	list-style: none;
-	padding: 0;
 }
 
 /* Partial: Header */
 
 header {
-	margin-top: 3rem;
+	margin-top: 3.2rem;
 	overflow: auto;
 }
 
@@ -91,20 +84,20 @@ header a {
 }
 
 header a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 header h1.site-name {
 	text-align: center;
 	font-weight: 600;
-	font-size: 2rem;
-	color: #333333;
+	font-size: 2.2rem;
+	color: #d2d2d2;
 	margin: 0;
 }
 
 header ul.nav {
 	height: auto;
-	margin-top: 0;
+	margin-top: 6px;
 	margin-bottom: 1rem;
 	display: flex;
 	flex-wrap: wrap;
@@ -134,19 +127,66 @@ div.tags ul li {
 }
 
 
+
 /* Partial: Content */
 
 div.content {
 	align: center;
-	margin: 0 auto;
-	width: clamp(300px, 66%, 880px);
+	margin: 0 auto 60px;
+    width: 800px;
 }
 
-.content h1, h2, h3, h4, h5, h6 {
-	font-weight: 600;
-	color: #333333;
-	margin-top: 2rem;
-	margin-bottom: 1rem;
+.content p:lang(zh) {
+}
+
+.content p {
+    line-height: 1.7rem;
+}
+
+.content h1 {
+    margin: 40px auto 32px;
+    /*font-size: 41px;*/
+    font-size: 2.15rem;
+    color: #52D7A9;
+}
+
+.content h2 {
+    margin: 32px auto 24px;
+    /*font-size: 33px;*/
+    font-size: 1.75rem;
+    color: #52D7A9; 
+}
+
+.content h3 {
+    margin: 24px 0 16px;
+    /*font-size: 22px;*/
+    font-size: 1.3rem;
+    color: #dadadb;
+    line-height: 1.2rem;
+}
+
+.content h3::before {
+    content: "# ";
+    color: #52D7A9; 
+    font-weight: bold;
+}
+
+.content h4 {
+    margin: 24px 0 16px;
+    /*font-size: 16px;*/
+    font-size: 1rem;
+    text-decoration: underline;
+    line-height: 1.2rem;
+}
+
+.content h5 {
+    margin: 24px 0 16px;
+    /*font-size: 14px;*/
+    font-size: 1.3rem;
+}
+
+.content h6 {
+    margin: 24px 0 16px;
 }
 
 .content .meta {
@@ -175,13 +215,13 @@ div.content {
 .content .markdown {
 	font-weight: 400;
 	font-size: 1rem;
-	color: #333333;
+	color: #c4c4c5;
 	line-height: 1.75rem;
 }
 
 .content .markdown li {
 	margin-top: 0rem;
-	margin-bottom: .5rem;
+	margin-bottom: 0rem;
 }
 
 .content twitterwidget {
@@ -191,13 +231,19 @@ div.content {
 /* blog post typography */
 
 .content .blog-post-title {
-	font-size: 2rem;
+	font-size: 2.15rem;
 	line-height: 2.625rem;
+    margin-bottom: 0.2rem;
 }
 
 .content .blog-post-content {
-	font-size: 1rem;
+	font-size: 15px;
 	line-height: 2rem;
+}
+
+.content ol, ul {
+    padding-inline-start: 20px;
+    font-feature-settings: "pwid";
 }
 
 /* centered, boxed blog post images */
@@ -288,6 +334,11 @@ div.content {
 	margin: 0;
 }
 
+.content .date {
+	font-size: 0.9rem;
+	color: #999083;
+    line-height: 1.5rem;
+}
 
 .content .markdown blockquote {
 	padding: 0.5rem 0.5rem;
@@ -325,7 +376,7 @@ div.content {
 }
 
 .content .meta-title {
-	font-size: 1.5rem;
+	font-size: 1.6rem;
 	font-weight: 600;
 }
 
@@ -338,9 +389,9 @@ div.content {
 }
 
 .content .meta-date {
-	font-size: 1rem;
-	color: #738491;
-	margin-bottom: 2rem;
+	font-size: 0.9rem;
+	color: #999083;
+	margin-bottom: 2.5rem;
 }
 
 .content .navigation .icon {
@@ -373,14 +424,6 @@ div.content {
 	background-color: #f8f8f8;
 }
 
-/* Partial: Utterances Comments */
-
-.comments {
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
-	max-width: 100%;
-}
-
 /* medium screens */
 
 @media (max-width: 767.98px) {
@@ -388,3 +431,5 @@ div.content {
 		font-size: 0.9rem;
 	}
 }
+
+
