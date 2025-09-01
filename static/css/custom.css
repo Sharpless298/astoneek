@@ -1,7 +1,7 @@
 /* Global styles */
 
 body {
-    font-family: Noto Sans CJK TC, -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,Noto Sans, open sans,helvetica neue,sans-serif;
 	font-feature-settings: "liga", "kern";
 	background-color: #1d1e20;
 }
@@ -90,7 +90,7 @@ header a:hover {
 header h1.site-name {
 	text-align: center;
 	font-weight: 600;
-	font-size: 2.2rem;
+	font-size: 2.1rem;
 	color: #d2d2d2;
 	margin: 0;
 }
@@ -133,7 +133,7 @@ div.tags ul li {
 div.content {
 	align: center;
 	margin: 0 auto 60px;
-    width: 800px;
+    width: 750px;
 }
 
 .content p:lang(zh) {
@@ -147,7 +147,7 @@ div.content {
 .content h1 {
     margin: 40px auto 32px;
     /*font-size: 41px;*/
-    font-size: 2.15rem;
+    font-size: 2.05rem;
     color: #52D7A9;
 }
 
@@ -232,7 +232,7 @@ div.content {
 /* blog post typography */
 
 .content .blog-post-title {
-	font-size: 2.15rem;
+	font-size: 2.05rem;
 	line-height: 2.625rem;
     margin-bottom: 0.2rem;
 }
