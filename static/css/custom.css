@@ -1,7 +1,7 @@
 /* Global styles */
 
 body {
-    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
+    font-family: Noto Sans CJK TC, -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
 	font-feature-settings: "liga", "kern";
 	background-color: #1d1e20;
 }
