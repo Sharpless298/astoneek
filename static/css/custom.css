@@ -137,6 +137,7 @@ div.content {
 }
 
 .content p:lang(zh) {
+    font-feature-settings: "pwid";
 }
 
 .content p {
