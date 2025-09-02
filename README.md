@@ -2,4 +2,7 @@
 
 A hugo theme.
 
-Still in dev.
+## Todo
+- [] theme toggle
+- [] chroma
+- [] remove unnecessary code

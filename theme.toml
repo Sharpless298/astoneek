@@ -1,18 +1,18 @@
-name = "Astoneek"
+name = "supremum"
 license = "GPL-v3"
 licenselink = "https://github.com/nanxstats/hugo-tanka/blob/master/LICENSE"
 description = ""
-homepage = "fhvirus.github.io"
+homepage = "sharpless298.github.io"
 tags = []
 features = []
-min_version = "0.41"
+min_version = "0.149"
 
 [author]
-  name = "FHVirus"
-  homepage = "fhvirus.github.io"
+  name = "Sharpless298"
+  homepage = "sharpless298.github.io"
 
 # If porting an existing theme
 [original]
-  name = "Tanka"
-  homepage = "https://github.com/nanxstats/hugo-tanka"
-  repo = "https://github.com/nanxstats/hugo-tanka"
+  name = "FHVirus"
+  homepage = "https://github.com/fhvirus/astoneek"
+  repo = "https://github.com/fhvirus/astoneek"
