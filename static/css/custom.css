@@ -141,7 +141,7 @@ div.content {
 }
 
 .content p {
-    line-height: 1.7rem;
+    line-height: 1.6rem;
 }
 
 .content h1 {
@@ -243,6 +243,7 @@ div.content {
 }
 
 .content ol, ul {
+    line-height: 1.8rem;
     padding-inline-start: 20px;
     font-feature-settings: "pwid";
 }
