@@ -99,7 +99,7 @@ header h1.site-name {
 header ul.nav {
 	height: auto;
 	margin-top: 4px;
-	margin-bottom: 1rem;
+	margin-bottom: 2.5rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
