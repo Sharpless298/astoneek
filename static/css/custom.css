@@ -70,6 +70,7 @@ kbd kbd {
 
 ul.postlist {
 	list-style: none;
+    padding-inline-start: 50px;
 }
 
 /* Partial: Header */
@@ -90,14 +91,14 @@ header a:hover {
 header h1.site-name {
 	text-align: center;
 	font-weight: 600;
-	font-size: 2.1rem;
+	font-size: 2.15rem;
 	color: #d2d2d2;
 	margin: 0;
 }
 
 header ul.nav {
 	height: auto;
-	margin-top: 6px;
+	margin-top: 4px;
 	margin-bottom: 1rem;
 	display: flex;
 	flex-wrap: wrap;
@@ -374,7 +375,7 @@ div.content {
 
 .content .meta-title {
 	font-size: 1.5rem;
-	margin-bottom: 0.5rem;
+	margin-bottom: 0.05rem;
 }
 
 .content .meta-title {
@@ -433,5 +434,3 @@ div.content {
 		font-size: 0.9rem;
 	}
 }
-
-
