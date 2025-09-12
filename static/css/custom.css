@@ -273,10 +273,10 @@ div.content {
 
 /* enclosed by single backtick (`) */
 .content .markdown :not(pre) > code {
-	color: #333;
+	color: #c4c4c5;
 	padding: .2em .4em;
 	margin: 0;
-	background-color: rgba(27, 31, 35, .05);
+	background-color: #37383e;
 	border-radius: 6px;
 }
 

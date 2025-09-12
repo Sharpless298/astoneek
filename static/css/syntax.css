@@ -60,7 +60,7 @@
 /* CommentSingle */ .chroma .c1 { color:#414868 }
 /* CommentSpecial */ .chroma .cs { color:#414868 }
 /* CommentPreproc */ .chroma .cp { color:#bb9af7 }
-/* CommentPreprocFile */ .chroma .cpf { color:#c3e88d}
+/* CommentPreprocFile */ .chroma .cpf { color:#c3e88d }
 /* GenericDeleted */ .chroma .gd { color:#db4b4b;background-color:#15161e }
 /* GenericEmph */ .chroma .ge { font-style:italic }
 /* GenericError */ .chroma .gr { color:#db4b4b }
