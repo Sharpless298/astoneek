@@ -1,0 +1,16 @@
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const container = document.body;
+  const chinesePunctuation = /([\u3000-\u303F\uFF00-\uFF65])/g;
+
+  function addSpaceToPunctuation(node) {
+    if (node.nodeType === Node.TEXT_NODE) {
+      node.textContent = node.textContent.replace(chinesePunctuation, ' $1 ');
+    } else {
+      node.childNodes.forEach(addSpaceToPunctuation);
+    }
+  }
+
+  addSpaceToPunctuation(container);
+});
+</script>

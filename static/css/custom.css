@@ -138,10 +138,6 @@ div.content {
     width: 800px;
 }
 
-.content p:lang(zh) {
-    font-feature-settings: "pwid";
-}
-
 .content p {
     line-height: 1.6rem;
 }
@@ -247,7 +243,6 @@ div.content {
 .content ol, ul {
     line-height: 1.8rem;
     padding-inline-start: 20px;
-    font-feature-settings: "pwid";
 }
 
 /* centered, boxed blog post images */
